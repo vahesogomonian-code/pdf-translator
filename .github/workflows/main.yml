@@ -16,6 +16,7 @@ jobs:
       - name: Build with Buildozer
         run: |
           export PATH=$PATH:$HOME/.local/bin
+          # Эта команда сама скачает всё нужное и создаст APK
           buildozer -v android debug
           
       - name: Upload APK
